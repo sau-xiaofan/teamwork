@@ -27,6 +27,7 @@ public class WifiAddressServiceImpl implements wifiAddressService {
         wifiAddressMapper.saveAddress(uid, address);
     }
 
+
     @Override
     public int findStudentNum(String id) {
         return wifiAddressMapper.findStudentNum(id);
