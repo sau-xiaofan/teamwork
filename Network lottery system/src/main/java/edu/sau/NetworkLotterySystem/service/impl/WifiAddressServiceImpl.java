@@ -22,7 +22,6 @@ public class WifiAddressServiceImpl implements wifiAddressService {
     public void saveStudentAddress(String uid, String created, String xuegonghao, String xingming, String beizhu, String address, String id) {
         wifiAddressMapper.saveStudentAddress(uid, created, xuegonghao, xingming, beizhu, address, id);
     }
-
     @Override
     public void saveAddress(String uid, String address) {
         wifiAddressMapper.saveAddress(uid, address);
