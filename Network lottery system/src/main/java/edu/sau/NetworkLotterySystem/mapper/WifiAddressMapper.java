@@ -2,14 +2,13 @@ package edu.sau.NetworkLotterySystem.mapper;
 
 import edu.sau.NetworkLotterySystem.entity.Page;
 import edu.sau.NetworkLotterySystem.entity.PageData;
-import edu.sau.NetworkLotterySystem.entity.wifiAddress;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface WifiAddressMapper extends BaseMapper<wifiAddress> {
+public interface WifiAddressMapper  {
 
     void saveStudentAddress(String uid, String created, String xuegonghao, String xingming, String beizhu, String address, String id);
 

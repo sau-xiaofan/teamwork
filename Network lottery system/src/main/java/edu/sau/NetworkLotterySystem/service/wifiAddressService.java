@@ -2,14 +2,14 @@ package edu.sau.NetworkLotterySystem.service;
 
 import edu.sau.NetworkLotterySystem.entity.Page;
 import edu.sau.NetworkLotterySystem.entity.PageData;
-import edu.sau.NetworkLotterySystem.entity.wifiAddress;
+
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;
 
 
 public interface
-wifiAddressService extends IService<wifiAddress> {
+wifiAddressService  {
 
     int findAddressNum(String address);
 

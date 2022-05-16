@@ -2,7 +2,6 @@ package edu.sau.NetworkLotterySystem.service.impl;
 
 import edu.sau.NetworkLotterySystem.entity.Page;
 import edu.sau.NetworkLotterySystem.entity.PageData;
-import edu.sau.NetworkLotterySystem.entity.wifiAddress;
 import edu.sau.NetworkLotterySystem.mapper.WifiAddressMapper;
 import edu.sau.NetworkLotterySystem.service.wifiAddressService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -13,7 +12,7 @@ import java.util.List;
 
 
 @Service
-public class WifiAddressServiceImpl extends ServiceImpl<WifiAddressMapper, wifiAddress> implements wifiAddressService {
+public class WifiAddressServiceImpl implements wifiAddressService {
 
     @Autowired
     private WifiAddressMapper wifiAddressMapper;
