@@ -10,8 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 
 /**
  * 说明：所有处理类父类
- * 作者：FH Admin Q313596790
- * 官网：www.fhadmin.org
  */
 public class BaseController {
 

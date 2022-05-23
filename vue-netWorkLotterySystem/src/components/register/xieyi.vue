@@ -1,15 +1,15 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div>
+    <H5>脑子没问题就行</H5>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: "xieyi"
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>

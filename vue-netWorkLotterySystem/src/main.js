@@ -5,9 +5,13 @@ import router from './router'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import axios from 'axios'
+import VueParticles from 'vue-particles'
+import md5 from 'js-md5';
 
+Vue.prototype.$md5 = md5;
 Vue.use(ElementUI);
-Vue.prototype.$axios = axios
+Vue.use(VueParticles)
+Vue.prototype.$http = axios
 axios.defaults.baseURL = '/api'
 
 

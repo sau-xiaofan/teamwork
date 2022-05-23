@@ -13,8 +13,10 @@
   "dependencies": {
     "axios": "^0.26.1",
     "element-ui": "^2.15.8",
+    "js-md5": "^0.7.3",
     "vue": "^2.5.2",
     "vue-amap": "^0.5.8",
+    "vue-particles": "^1.0.9",
     "vue-resource": "^1.5.3",
     "vue-router": "^3.0.1"
   },

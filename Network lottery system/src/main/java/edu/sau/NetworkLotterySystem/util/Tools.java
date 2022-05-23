@@ -1,5 +1,7 @@
 package edu.sau.NetworkLotterySystem.util;
 
+import org.junit.Test;
+
 import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -28,6 +30,7 @@ public class Tools {
 		 Random r = new Random();
 		 return r.nextInt(9000)+1000;
 	}
+
 
 	/**
 	 * 检测字符串是否不为空(null,"","null")

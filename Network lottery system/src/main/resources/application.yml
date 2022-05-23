@@ -11,12 +11,17 @@ spring:
       minimum-idle: 5
       connection-test-query: select 1
       pool-name: HikariCP
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://jianml.cn:3306/mybatis?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
     driver-class-name: com.p6spy.engine.spy.P6SpyDriver
     url: jdbc:p6spy:mysql://47.93.77.78:3306/NetworkLotterySystem?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2b8
     username: root
     password: sxf010629
+
+  redis:
+    database: 0 #redis数据库索引，默认为0
+    host: 47.93.77.78 #redis服务器地址
+    port: 6379 #redis服务器连接端口
+    password: sxf010629 #redis服务器连接密码，默认为null
+    timeout: 5000 #redis连接超时时间
 
 mybatis-plus:
   # MyBatis Mapper 所对应的 XML 文件位置
@@ -30,3 +35,4 @@ mybatis-plus:
   global-config:
     # 关闭 mybatis-plus的 banner
     banner: false
+

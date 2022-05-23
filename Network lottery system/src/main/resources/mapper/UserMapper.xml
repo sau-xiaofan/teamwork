@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.sau.NetworkLotterySystem.mapper.UserMapper">
+
+    <insert id="saveUser">
+        insert into user
+    </insert>
+    <insert id="insertUserByPhone"  parameterType="edu.sau.NetworkLotterySystem.entity.PageData">
+        insert into user(USER_ID, PASSWORD, PHONE, STATUS)
+        values(
+                  #{userId}, #{password}, #{phone}, #{status}
+              )
+    </insert>
+
+    <select id="findNumByPhone" resultType="java.lang.Integer">
+        select count(1) from user where phone = #{phone}
+    </select>
+
+</mapper>
